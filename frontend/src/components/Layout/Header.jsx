@@ -57,10 +57,7 @@ const Header = ({ activeHeading }) => {
         <div className="hidden 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between">
           <div>
             <Link to="/">
-              <img
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
-                alt=""
-              />
+              <img src={process.env.PUBLIC_URL + "/icon.svg"} alt="" />
             </Link>
           </div>
           {/* search box */}
@@ -217,7 +214,7 @@ const Header = ({ activeHeading }) => {
           <div>
             <Link to="/">
               <img
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+                src={process.env.PUBLIC_URL + "/icon.svg"}
                 alt=""
                 className="mt-3 cursor-pointer"
               />
